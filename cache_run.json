@@ -1,0 +1,746 @@
+{
+  "plan": {
+    "question": "Does AI coding assistance actually make developers more productive?",
+    "objective": "Evaluate empirical evidence, limitations, and expert insights to determine if AI coding assistance genuinely increases software developer productivity.",
+    "sub_questions": [
+      {
+        "id": "Q1",
+        "question": "What metrics and frameworks are commonly used to define and measure developer productivity in AI tool evaluations?",
+        "angle": "context",
+        "search_query": "developer productivity metrics AI coding tools SPACE framework",
+        "why": "Establishing baseline metrics is necessary to evaluate what 'productivity' actually means in empirical research."
+      },
+      {
+        "id": "Q2",
+        "question": "What empirical data and case studies support the claim that AI coding assistants increase task completion speed?",
+        "angle": "evidence_for",
+        "search_query": "empirical study GitHub Copilot developer speed efficiency gains",
+        "why": "It is essential to gather quantitative evidence supporting productivity improvements directly from real-world usage."
+      },
+      {
+        "id": "Q3",
+        "question": "What studies or data indicate that AI coding tools cause code quality degradation, security vulnerabilities, or increased code review burdens?",
+        "angle": "evidence_against",
+        "search_query": "AI coding assistants code quality security vulnerabilities tech debt",
+        "why": "Faster code generation may be offset by increased debugging, security flaws, or technical debt."
+      },
+      {
+        "id": "Q4",
+        "question": "What are the key methodological limitations, biases, or gaps in existing research on AI developer productivity?",
+        "angle": "limitations",
+        "search_query": "limitations methodology measuring developer productivity AI assistants",
+        "why": "Understanding study design flaws helps prevent taking superficial or vendor-funded benchmark claims at face value."
+      },
+      {
+        "id": "Q5",
+        "question": "How does the productivity impact of AI coding tools differ across developer experience levels, such as junior versus senior engineers?",
+        "angle": "expert_views",
+        "search_query": "AI coding tools junior vs senior developer productivity impact",
+        "why": "Productivity gains may vary significantly depending on a developer's foundational knowledge and ability to review generated code."
+      }
+    ],
+    "model": "gemini-3.6-flash"
+  },
+  "search": {
+    "sources": [
+      {
+        "title": "The AI Productivity Paradox | Taroboba AI",
+        "url": "https://tarobobaai.com/research/developer-productivity-paradox",
+        "domain": "tarobobaai.com",
+        "excerpt": "McKinsey's internal study confirmed this pattern: documentation tasks finished in half the time and code generation completed 46% faster, but gains shrank to less than 10% for complex, unfamiliar tasks.\n\n### The Junior-Senior Divide\n\nEvery major study replicates the same finding: junior developers benefit dramatically more than seniors.\n\n| Study | Junior Impact | Senior Impact |\n --- \n| Brynjolfsson et al. (5,172 agents) | 34% improvement | Minimal impact |\n| Cui et al. (4,867 devs) | 9.5% more likely to adopt + higher gains | Lower adoption |\n| BCG \"Jagged Frontier\" (758 consultants) | Largest improvement | Can be negative |\n| JetBrains Survey (24,534 devs) | 3-5 hours/week saved | 1-2 hours/week saved |\n| Jellyfish Data | 4% faster | 22% faster (seniors with AI) | [...] Fastly's survey of 791 developers found seniors ship 2.5x more AI-generated code and report significant speed gains at double the rate of juniors. The behavioral pattern is clear: seniors treat AI like a talented but fallible junior developer needing oversight, while juniors treat it like an oracle.\n\n### Why Experienced Developers Slow Down\n\nThe METR study identified four key factors:\n\n## The System-Level Productivity Trap\n\nEven where individual task speed increases, system-level productivity faces structural bottlenecks.\n\n### The Review Bottleneck",
+        "score": 0.8589554,
+        "published_date": null,
+        "found_for": [
+          "Q5"
+        ],
+        "id": "S1"
+      },
+      {
+        "title": "AI coding gains by developer seniority | hackers&wizards",
+        "url": "https://www.hackersandwizards.dev/blog/2025/ai-productivity-by-seniority",
+        "domain": "hackersandwizards.dev",
+        "excerpt": "## The hard numbers\n\n 31.8% reduction in PR review cycle time\n 60.1% overall increase in code shipped\n About 20 minutes saved per developer daily\n\n## Who benefits most\n\n Junior engineers: 77% productivity increase\n Mid-level engineers: 45% productivity increase\n Senior engineers: 44% productivity increase\n\nThe juniors are seeing nearly 2x the gains of senior engineers.\n\n## Where AI actually delivers\n\nThe top three use cases:\n\n UI and frontend development (25.2%)\n Bug fixing and debugging (21.8%)\n Backend code generation (21.1%)\n\n## Gains track adoption intensity\n\nThe study found a direct correlation between adoption intensity and productivity gains. High adopters saw significant measurable improvements. Low adopters saw minimal or even negative impact. [...] Skip to content \n\nBlog\n\n# Junior engineers gain the most from AI coding tools\n\nA year-long study of 300 engineers at one company found real productivity gains from AI coding assistants, the largest for juniors, and gains that track how intensively teams adopt.\n\nWritten by\n\n Portrait of Benedikt Stemmildt\n\n  Benedikt Stemmildt   Founder & Co-CEO\n\nMeasuring AI impact\n\nPublished: 9 October 2025 ·  Updated:  ·  1 min read\n\nEveryone’s asking: “Do AI coding tools actually make developers more productive?”\n\nThe data is in. And it’s not what most people think.\n\nA comprehensive study (opens in a new tab) just measured real productivity gains across 300 engineers at one company using an AI coding assistant. The results reveal somet",
+        "score": 0.85741025,
+        "published_date": null,
+        "found_for": [
+          "Q5"
+        ],
+        "id": "S2"
+      },
+      {
+        "title": "Research: quantifying GitHub Copilot’s impact on developer productivity and happiness - The GitHub Blog",
+        "url": "https://github.blog/news-insights/research/research-quantifying-github-copilots-impact-on-developer-productivity-and-happiness",
+        "domain": "github.blog",
+        "excerpt": "In the experiment, we measured—on average—how successful each group was in completing the task and how long each group took to finish.\n\n The group that used GitHub Copilot had a higher rate of completing the task (78%, compared to 70% in the group without Copilot).\n The striking difference was that developers who used GitHub Copilot completed the task significantly faster–55% faster than the developers who didn’t use GitHub Copilot. Specifically, the developers using GitHub Copilot took on average 1 hour and 11 minutes to complete the task, while the developers who didn’t use GitHub Copilot took on average 2 hours and 41 minutes. These results are statistically significant (P=.0017) and the 95% confidence interval for the percentage speed gain is [21%, 89%]. [...] ### Finding 2: … but speed is important, too\n\nIn the survey, we saw that developers reported they complete tasks faster when using GitHub Copilot, especially repetitive ones. That was an expected finding (GitHub Copilot writes faster than a human, after all), but >90% agreement was still a pleasant surprise. Developers overwhelmingly perceive that GitHub Copilot is helping them complete tasks faster—can we observe and measure that effect in practice? For that we conducted a controlled experiment.\n\n#### Figure: Summary of the experiment process and results [...] There’s more to uncover! We’re conducting more experiments and a more thorough analysis of the experiment data we already collected—looking into heterogeneou",
+        "score": 0.84859616,
+        "published_date": null,
+        "found_for": [
+          "Q2"
+        ],
+        "id": "S3"
+      },
+      {
+        "title": "Vibe Shift in AI Coding: Senior Developers Ship 2.5x More Than Juniors | Fastly",
+        "url": "https://www.fastly.com/blog/senior-developers-ship-more-ai-code",
+        "domain": "fastly.com",
+        "excerpt": "# Vibe Shift? Senior Developers Ship nearly 2.5x more AI Code than Junior Counterparts\n\nFastly’s survey shows senior developers trust gen AI tools enough to ship 2.5x more AI code, while juniors stick to traditional coding and caution.\n\nKey Takeaways\n\n- Senior developers ship ~2.5× more AI-generated code than juniors (32% vs 13%)\n- AI\n  \n  feels faster, but research shows developers can take ~19% longer with it\n- Nearly 1 in 3 developers spend enough time fixing AI output to offset gains\n- Experience drives trust: senior devs are more confident using AI in production\n- AI boosts morale (~80% enjoy coding more), even if productivity gains are unclear\n- Most developers are aware of AI’s environmental impact [...] Senior developers were also more likely to say they invest time fixing AI-generated code. Just under 30% of seniors reported editing AI output enough to offset most of the time savings, compared to 17% of juniors. Even so, 59% of senior developers say AI tools help them ship faster overall, compared to 49% of juniors.\n\n## Senior Developers are More Optimistic about AI Saving Time\n\nJust over 50% of junior developers say AI makes them moderately faster. By contrast, only 39% of more senior developers say the same. But senior developers are more likely to report significant speed gains: 26% say AI makes them a lot faster, double the 13% of junior developers who agree. [...] ### Why Senior Developers Ship 2.5x More AI-Generated Code\n\nAbout a third of senior developers (10+",
+        "score": 0.8484707,
+        "published_date": null,
+        "found_for": [
+          "Q5"
+        ],
+        "id": "S4"
+      },
+      {
+        "title": "Is AI-Generated Code Becoming Tomorrow's Technical Debt Because Developers Are Prioritizing Speed Over Architectural Quality?",
+        "url": "https://www.linkedin.com/pulse/ai-generated-code-becoming-tomorrows-technical-5n8le",
+        "domain": "linkedin.com",
+        "excerpt": "1. AI-Generated Code Is Accelerating Development but an 8-Fold Increase in Code Duplication Is Raising Technical Debt Concerns - AI coding assistants accelerate software development but can also increase technical debt by introducing duplicated, poorly structured, and difficult-to-maintain code. GitClear's analysis of 211 million changed lines of code (2020–2024) revealed an 8-fold increase in duplicated code blocks during 2024, while copy-pasted code exceeded moved code, indicating declining refactoring practices. Google's 2024 DORA report also associated a 25% increase in AI adoption with a 7.2% decline in delivery stability. The article highlights how AI-generated code can increase debugging efforts, security vulnerabilities, maintenance costs, and testing complexity. It emphasizes [...] 2. Why AI-Generated Code Is Increasing the Cleanup Burden for Senior Engineers - Help Net Security on June 15, 2026, highlights the growing gap between AI-generated code quality and its reliability in production environments. Although AI coding assistants accelerate development, organizations face production failures because developers sometimes deploy generated code without thorough reviews. Common issues include edge-case failures, concurrency problems, security vulnerabilities, integration errors, and data integrity issues. The article reveals that senior engineers, particularly in DevOps and site reliability engineering (SRE), spend significant time troubleshooting, fixing, and refacto",
+        "score": 0.8474635,
+        "published_date": null,
+        "found_for": [
+          "Q3"
+        ],
+        "id": "S5"
+      },
+      {
+        "title": "AI Adoption Strategy: Senior vs Junior Developer Implementation | Augment Code",
+        "url": "https://www.augmentcode.com/guides/ai-adoption-strategy-senior-vs-junior-developer-implementation",
+        "domain": "augmentcode.com",
+        "excerpt": "You need numbers for the business case.\n\nDevelopers self-report time savings of roughly 2-3 hours per week at median productivity levels. For a team of 20 developers averaging $150k salary, that's $115k annual savings at median productivity. Add reduced onboarding time for new hires, and the ROI gets interesting fast.\n\nBut don't oversell it. Current research shows AI-assisted code doesn't consistently reduce debugging time. Sometimes it increases debugging because developers accept suggestions too quickly without understanding them.\n\nThe real value is faster learning and better architectural understanding. Juniors get productive sooner. Seniors spend less time explaining the same things repeatedly. Code review catches fewer basic mistakes. [...] Senior developers and junior developers need AI for completely different reasons. Seniors want architectural context and code review efficiency. Juniors need learning acceleration and confidence building. Deploy the same tool the same way to both groups, and you'll get resistance from seniors who think it's too simplistic and juniors who feel overwhelmed.\n\nBain research shows 10-15% productivity gains from AI assistants. But here's the catch. Only 1% of companies reach maturity, even as enterprise adoption accelerates. Most failures happen because teams ignore the seniority gap.\n\n## Why Most AI Rollouts Fail [...] The goal is better outcomes. If a developer is more productive without AI for certain tasks, that's fine. If another devel",
+        "score": 0.84733725,
+        "published_date": null,
+        "found_for": [
+          "Q5"
+        ],
+        "id": "S6"
+      },
+      {
+        "title": "How generative AI affects highly skilled workers | MIT Sloan",
+        "url": "https://mitsloan.mit.edu/ideas-made-to-matter/how-generative-ai-affects-highly-skilled-workers",
+        "domain": "mitsloan.mit.edu",
+        "excerpt": "## AI helped newer employees with less experience\n\nThe researchers found that access to Copilot increased output — the number of completed weekly tasks — by 26% when the results across all three experiments were averaged. However, the biggest productivity gains were seen among recent hires and developers in more junior positions, who increased their output by 27% to 39%. More senior developers saw productivity gains of 8% to 13%.\n\n“Inexperienced and short-tenured software developers were more likely to use the tool, and, moreover, their productivity increased a lot more,” Demirer said. “For those who are more experienced we actually don’t see much of an effect.”",
+        "score": 0.84208554,
+        "published_date": null,
+        "found_for": [
+          "Q5"
+        ],
+        "id": "S7"
+      },
+      {
+        "title": "AI Coding Assistants: Software Quality, Security & Maintainability",
+        "url": "https://medium.com/@martin.jordanovski/ai-coding-assistants-software-quality-security-maintainability-50d9d1b62881",
+        "domain": "medium.com",
+        "excerpt": "Duplicate code blocks also spiked,which makes sense if AI is unaware it’s regenerating code similar to something that exists elsewhere in the codebase​. Essentially, AI might cause developers to _write more, newer code_ rather than reusing existing functions, because it’s so easy to generate something from scratch on demand. This can inadvertently increase technical debt (e.g., multiple implementations of the same logic).\n\nFrom a maintainability perspective, many team leads have voiced concern that AI may accelerate delivery of code at the expense of clarity and simplicity. One CEO commented that _“AI-enabled code development [will exponentially increase] the volume and velocity of code delivery, much of which we anticipate will be of lower quality and more bloated.”_​. [...] However, those benefits are only realized if developers actively use the AI for quality purposes, not just raw code generation. The overall industry insight is that AI’s role in technical debt is double-edged. It can help write tests, enforce patterns, and do mass refactors (reducing debt), but it can also flood a project with sloppy code if not kept in check (increasing debt).\n\nSeasoned engineers have reported experiences where AI-produced code in large-scale production had to be heavily reviewed and in some cases rewritten, either due to performance issues or maintainability. [...] Over time, if such AI-born code accumulates in a codebase, you could end up with a patchwork of different styles and a lot",
+        "score": 0.82893884,
+        "published_date": null,
+        "found_for": [
+          "Q3"
+        ],
+        "id": "S8"
+      },
+      {
+        "title": "How are you addressing technical debt risk resulting from AI coding tools? Have you established specific processes to manage vulnerabilities in AI-generated code, and are you collaborating with software engineering or other teams using these tools? | Gartner Peer Community",
+        "url": "https://www.gartner.com/peer-community/post/how-addressing-technical-debt-risk-resulting-ai-coding-tools-have-established-specific-processes-to-manage-vulnerabilities",
+        "domain": "gartner.com",
+        "excerpt": "AI-assisted coding tools aren’t technical debt creators, they’re technical debt accelerants. If an organization already struggles with code backlog, quality, or maintainability, AI doesn’t introduce new debt; it simply amplifies existing weaknesses by producing more code faster than governance and review processes can handle. The real risk lies not in the code itself, but in the unsupportable conditions that emerge when AI-generated output bypasses established development, testing, and secure coding standards. [...] Addressing this risk requires cross-functional governance between Security Architecture, Engineering, and DevOps, ensuring that AI-generated code is subject to the same vulnerability management, peer review, and lifecycle controls as human-written code. In short, AI accelerates both opportunity and risk, organizations that mature their secure development and change management processes in parallel will stay ahead of that curve instead of being buried by it.",
+        "score": 0.82824534,
+        "published_date": null,
+        "found_for": [
+          "Q3"
+        ],
+        "id": "S9"
+      },
+      {
+        "title": "GitHub Copilot Statistics 2026: Users, Pricing, Productivity and Security - Second Talent",
+        "url": "https://www.secondtalent.com/resources/github-copilot-statistics",
+        "domain": "secondtalent.com",
+        "excerpt": "## Does GitHub Copilot Make Developers Faster?\n\nIn controlled tests, it depends on the task and the developer. GitHub’s own 2022 experiment gave 95 professional developers the same job, writing an HTTP server in JavaScript.\n\nThe half with Copilot finished in 1 hour 11 minutes on average, 55% faster than the 2 hours 41 minutes it took the rest.\n\nMore of the Copilot group also finished: 78%, against 70% without it. The task was a small, self-contained program.\n\nTwo later trials measured work on real codebases, and they point in different directions.\n\nAccenture with GitHub, 2024\n\n +8.69% pull requests per developer\n +15% pull request merge rate\n +84% successful builds\n\nMETR, 2025 [...] METR, 2025\n\n 19% slower on 246 real issues\n 16 experienced open-source developers\n Tools: Cursor Pro with Claude 3.5 and 3.7 Sonnet\n\nSources: GitHub and Accenture, May 2024; METR, July 2025.\n\nThe Accenture study was a randomized trial of Copilot inside a large company. METR tested a different tool, Cursor, on large open-source projects the developers already knew well.\n\nIts most quoted finding is about perception: the developers expected AI to speed them up by 24%, and afterwards still believed it had sped them up by 20%.\n\n## How Developers Use GitHub Copilot\n\nOnce they have a license, most developers start straight away. In the Accenture rollout, 81.4% installed the Copilot extension the day they got access, and 96% of those accepted a suggestion the same day.",
+        "score": 0.82796735,
+        "published_date": null,
+        "found_for": [
+          "Q2"
+        ],
+        "id": "S10"
+      },
+      {
+        "title": "GitHub Copilot Statistics 2026",
+        "url": "https://www.quantumrun.com/consulting/github-copilot-statistics",
+        "domain": "quantumrun.com",
+        "excerpt": "| Metric | Value | Period |\n---\n| Total Cumulative Users | 20+ million | July 2025 |\n| Paid Subscribers | 1.3 million | Q1 2025 |\n| Organizations Using Copilot | 50,000+ | 2025 |\n| Fortune 100 Adoption Rate | 90% | July 2025 |\n\n## GitHub Copilot Statistics Developer Productivity Impact\n\nResearch conducted by GitHub in partnership with Accenture measured productivity improvements across 4,800 developers. Controlled experiments showed developers completed JavaScript HTTP server tasks 55% faster when using Copilot.\n\nPull request time dropped from 9.6 days to 2.4 days, representing a 75% reduction in development cycle time. Code review speed improved 15%, while pull requests per developer increased 8.69%. [...] ### Does GitHub Copilot improve developer productivity?\n\nYes, research shows developers complete tasks 55% faster using GitHub Copilot. Pull request time decreased from 9.6 days to 2.4 days, and successful builds increased 84% among Copilot users.",
+        "score": 0.8233284,
+        "published_date": null,
+        "found_for": [
+          "Q2"
+        ],
+        "id": "S11"
+      },
+      {
+        "title": "Vibe Coding’s Security Debt: The AI-Generated CVE Surge – Lab Space",
+        "url": "https://labs.cloudsecurityalliance.org/research/csa-research-note-ai-generated-code-vulnerability-surge-2026",
+        "domain": "labs.cloudsecurityalliance.org",
+        "excerpt": "Empirical research across Fortune 50 enterprises found that AI-assisted developers produce commits at three to four times the rate of their peers but introduce security findings at 10x the rate, creating a security debt that accumulates faster than organizations can remediate it .\n Veracode tested over 100 large language models on security-sensitive coding tasks and found that 45% of AI-generated code samples introduce OWASP Top 10 vulnerabilities — a pass rate that has not improved across multiple testing cycles from 2025 through early 2026 despite vendor claims to the contrary [4, 5]. [...] The enterprise data mirrors the laboratory findings. Apiiro deployed its Deep Code Analysis engine across tens of thousands of repositories at Fortune 50 enterprises between December 2024 and June 2025. AI-assisted developers committed code at three to four times the rate of their non-AI peers, and monthly security findings rose from approximately 1,000 to more than 10,000 — a tenfold surge over six months [7; see also 8]. Syntax errors in AI-generated code dropped by 76%, and logic bugs fell 60%, likely contributing to why developers reported feeling more productive and confident. The flaws that increased were the dangerous architectural ones: privilege escalation paths rose by 322%, and architectural design flaws rose by 153% . These are the vulnerabilities that require deep contextual [...] ### The Perception Gap\n\nAn underappreciated dimension of the problem is that developers using A",
+        "score": 0.82290184,
+        "published_date": null,
+        "found_for": [
+          "Q3"
+        ],
+        "id": "S12"
+      },
+      {
+        "title": "Developer Productivity With and Without GitHub Copilot: A Longitudinal Mixed-Methods Case Study",
+        "url": "https://arxiv.org/html/2509.20353v2",
+        "domain": "arxiv.org",
+        "excerpt": "Employing a mixed-methods approach in a corporate setting, Pereira et al. (2025) analyzed observations, surveys, and company development data, finding that most participants felt they completed tasks more quickly when using GenAI tools. In the study by Peng et al. (2023), developers were asked to implement an HTTP server in JavaScript as quickly as possible. Those with access to GitHub Copilot completed the task 55.8% faster than the control group. Notably, the productivity gains were larger for less experienced developers. Similarly, Cui et al. (2024) studied the impact of Copilot in real workplace settings across three companies, including Microsoft and Accenture. They used metrics such as pull requests, commits, and builds as proxies for completed tasks, and compared developers who [...] on 57% of workdays. In contrast, developers who were not encouraged reported only 3.9% in time savings and 38% tool usage. Despite these small gains, the study found no significant effects on broader economic outcomes, such as total hours worked or wage increases. In short, controlled task studies report larger productivity effects than field studies and workplace surveys (Peng et al., 2023; Cui et al., 2024; Humlum and Vestergaard, 2025). [...] Our findings align with those of Humlum and Vestergaard (2025), who report modest productivity gains from GenAI tools in a large-scale study of workers in Denmark. On average, users in the latter study saved only 3% of their time. Humlum and Vester",
+        "score": 0.8193158,
+        "published_date": null,
+        "found_for": [
+          "Q2"
+        ],
+        "id": "S13"
+      },
+      {
+        "title": "Generative AI and Technical Debt in Software Development: Productivity Gains versus Code Quality and Security Risk | International Journal of Computer Information Systems and Industrial Management Applications",
+        "url": "https://cspub-ijcisim.org/index.php/ijcisim/article/view/5434",
+        "domain": "cspub-ijcisim.org",
+        "excerpt": "Generative Artificial Intelligence (GenAI) coding assistants like GitHub Copilot, ChatGPT, Amazon CodeWhisperer, and new agentic development environments have taken the software industry by storm, with the promise of enhancing developer productivity. But there has been increasing evidence to the contrary, that since these benefits come with a parallel increase in what has been dubbed \"technical debt\"—quality, maintainability and security problems only become apparent at a later point in the software lifecycle. This paper empirically analyzes the impact of GenAI coding assistants on developer productivity, code quality and maintainability and security posture from two perspectives, that of IT companies. Concurrent mixed method (triangulation) design is used with structured survey of 412 [...] has substantially higher technical-debt density (37%) and security-vulnerability density (41%) than do codes written by humans. The governance maturity is the key moderator that has significant increase in the value of Δ R^2 = 0.14. The study suggests a governance model that consists of these three dimensions: velocity, maintainability, and security, and extends the concept of technical debt in the field of information systems and software engineering, adding the concept of technical debt as a socio-technical risk instead of automated.",
+        "score": 0.818011,
+        "published_date": null,
+        "found_for": [
+          "Q3"
+        ],
+        "id": "S14"
+      },
+      {
+        "title": "GitHub Copilot Developer Productivity: 10.6% More PRs",
+        "url": "https://www.harness.io/blog/the-impact-of-github-copilot-on-developer-productivity-a-case-study",
+        "domain": "harness.io",
+        "excerpt": "### Cycle Time\n\nCycle time is defined as the time taken to complete a development cycle from the initiation of a task to its deployment. It is a fundamental measure of development efficiency. The study demonstrated a reduction in cycle time by an average of 3.5 hours during the month when developers leveraged GitHub Copilot, representing a 2.4% improvement compared to the month when Copilot was not used. This reduction suggests that GitHub Copilot's assistance in generating code snippets and offering coding suggestions contributes to quicker task completion and ultimately shorter development cycles.\n\n## Conclusion [...] GitHub Copilot demonstrates measurable productivity gains. This study confirms a 10.6% increase in pull requests and 3.5-hour reduction in cycle time when developers use AI-assisted coding.\n Faster coding creates downstream challenges. More code output requires optimized review processes, testing pipelines, and deployment workflows to prevent new bottlenecks from emerging.\n End-to-end visibility is essential. Platforms like Harness AIDI measure the complete delivery lifecycle, revealing whether coding productivity translates into actual deployment velocity and business outcomes. [...] ## The Github Copilot Impact\n\n Found a significant 10.6% increase in PRs with Copilot integration.\n Demonstrated a 3.5 hours reduction in cycle time, enhancing development efficiency.\n\n## Challenges Before Adoption of Github Copilot",
+        "score": 0.8178656,
+        "published_date": null,
+        "found_for": [
+          "Q2"
+        ],
+        "id": "S15"
+      },
+      {
+        "title": "SPACEX: Exploring metrics with the SPACE model for developer productivity",
+        "url": "https://arxiv.org/html/2511.20955v1",
+        "domain": "arxiv.org",
+        "excerpt": "More recently, in 2024, researchers at Accenture Labs used the SPACE framework to evaluate LLM-based development tools, like GitHub Copilot, while our study focuses primarily on traditional development cycles. Like our study, this study agrees that traditional metrics such as commit count and code volume are not representative of productivity, noting that collaboration and satisfaction are more crucial indicators. However, our work proposes a standardization and weighted summation into a singular, unified Composite Productivity Score, while this study actively critiques the lack of standardized GenAI productivity metrics, rather than unifying them (15).\n\n### 6.4. Future Work [...] Measuring developer productivity has been the topic of many related studies in empirical software engineering. Typically, traditional metrics, such as commit counts and lines of codes (LOC) have been used, but these generally do not capture important (and qualitative) aspects of the development process such as code quality, collaboration, and well-being of developers. To account for these shortcomings, Microsoft researchers created the SPACE Framework in 2021 to evaluate productivity across five different dimensions, including Satisfaction, Performance, Activity, Communication, and Efficiency. Unlike traditional approaches, SPACE directly acknowledges how it is not possible for a singular metric to fully encapsulate developer productivity. Our study strives to build upon this framework by [...] A mo",
+        "score": 0.81640637,
+        "published_date": null,
+        "found_for": [
+          "Q1"
+        ],
+        "id": "S16"
+      },
+      {
+        "title": "Beyond the Commit: Developer Perspectives on Productivity with AI Coding Assistants | Proceedings of the IEEE/ACM 48th International Conference on Software Engineering: Software Engineering in Practice",
+        "url": "https://dl.acm.org/doi/10.1145/3786583.3786848",
+        "domain": "dl.acm.org",
+        "excerpt": "Understanding productivity in the age of AI coding assistants requires rethinking established measures and frameworks. We leverage a mixed-methods approach to show that developer productivity using AI coding assistants cannot be captured by single metrics alone. First, our survey results revealed high satisfaction but only modest time savings, underscoring the limits of efficiency-focused measures. Second, our semi-structured interviews surfaced six factors, ranging from self-sufficiency and reduced cognitive load to long-term expertise and ownership, that capture both immediate and long-term impacts. By framing productivity as multi-dimensional and context-dependent, this work offers a foundation for more holistic evaluations of AI coding assistants for future research and industry [...] Analyses of developer interactions with AI coding assistants. Beyond user surveys, objective metrics may also help measure the impact of AI coding assistants on deployment-related factors. Commit frequency and code completion acceptance are frequently used to measure a developer’s usage of AI coding assistants. While these metrics are relevant to deployment factors, they are not able to capture concrete time spent either completing the task (Factor 3) or in the peer review process (Factor 4). It remains that we largely rely on survey-based approaches to measure the perceived time saved rather than the actual time saved—prior work has shown that users themselves may not reliably report the am",
+        "score": 0.8025555,
+        "published_date": null,
+        "found_for": [
+          "Q4"
+        ],
+        "id": "S17"
+      },
+      {
+        "title": "The Complete Guide to the SPACE Framework",
+        "url": "https://plandek.com/blog/complete-guide-to-the-space-framework",
+        "domain": "plandek.com",
+        "excerpt": "Instead of prescribing a fixed set of metrics, SPACE encourages teams to combine quantitative system data with qualitative insights to get a more accurate picture of how engineering actually works.\n\n## Why the SPACE framework matters\n\nTraditional software engineering productivity metrics focus on output and speed – commits, pull requests, velocity, deployments.\n\nThese signals are useful, but incomplete:\n\n Activity is easy to inflate (especially with AI-assisted coding)\n Output doesn’t equal impact\n Speed without context hides trade-offs in quality and rework\n Individual metrics distort team behavior rather than improve it\n\nThe SPACE framework was created to help solve this problem. SPACE introduces a broader lens: [...] ### What are examples of SPACE metrics?\n\nSPACE metrics include cycle time, lead time, deployment frequency, PR review time, developer satisfaction scores, and indicators of collaboration and flow across the SDLC.\n\n### How does AI impact SPACE metrics?\n\nAI increases activity metrics such as code output and commits, but does not automatically improve delivery outcomes, making it more important to measure flow, quality, predictability, and real impact.\n\n#### Related resources\n\n## Related resources\n\n###### Related resources\n\nView all\n\nView all\n\nPlandek Work Units normalization of pull requests\n\n##### A normalized measure of engineering output: Work Units\n\nArtificial Intelligence\n\nNov 11, 2026\n\nPlandek Work Units normalization of pull requests [...] In this guide:\n",
+        "score": 0.80147004,
+        "published_date": null,
+        "found_for": [
+          "Q1"
+        ],
+        "id": "S18"
+      },
+      {
+        "title": "SPACE Metrics Framework for Developers Explained (2025 Edition) | LinearB Blog",
+        "url": "https://linearb.io/blog/space-framework",
+        "domain": "linearb.io",
+        "excerpt": "Unlike narrow performance metrics, SPACE gives engineering leaders a broader view of what’s happening inside their teams. It helps teams set better goals, uncover workflow blockers, and boost productivity, without losing sight of the human side of software development. As Gen AI tools and platform engineering reshape how developers work, SPACE gives teams a balanced, people-first way to measure both technical and cultural signals of productivity.\n\n## SPACE Metrics Framework vs. DORA Metrics Framework [...] ## The Best Tools for the SPACE Metrics Framework\n\nThe most important consideration when evaluating tools for the SPACE Metrics Framework is whether you want a comprehensive engineering productivity platform or specialized point solutions for measuring metrics within each of the five key dimensions.\n\nWe recommend a comprehensive platform like LinearB. These platforms also often include features for delivery insights, team goal tracking, Gen AI enablement, and resource reporting.\n\nThe SPACE Framework helps engineering leaders measure more than just output, it captures the full developer experience. With its five dimensions and 20 metrics, SPACE offers a deeper way to assess performance, engagement, and process health. [...] We get requests every day from engineering leaders who want a clear, updated view of the SPACE Metrics Framework—what it is, how it compares to DORA metrics, and why it matters more than ever in 2025.  \nWith ongoing shifts in developer experience (DevEx),",
+        "score": 0.78464925,
+        "published_date": null,
+        "found_for": [
+          "Q1"
+        ],
+        "id": "S19"
+      },
+      {
+        "title": "What Is the SPACE Framework? Developer Productivity Guide",
+        "url": "https://gitmore.io/resources/glossary/space-framework",
+        "domain": "gitmore.io",
+        "excerpt": "The SPACE framework was created by researchers at GitHub, Microsoft, and the University of Victoria as a response to the misuse of single-metric productivity measures (like lines of code or commit counts). It argues that developer productivity is multidimensional and cannot be captured by any single metric. The five dimensions are: Satisfaction (developer happiness, fulfillment, and well-being), Performance (outcomes and impact of work, not just output), Activity (observable actions like commits, PRs, reviews, and deployments), Communication (how well the team collaborates, shares knowledge, and coordinates work), and Efficiency (ability to complete work with minimal waste, including flow state and minimal interruptions). The framework recommends measuring at least three of the five [...] ## How to measure\n\nMeasure at least three of the five SPACE dimensions: Satisfaction — quarterly developer survey (recommend DX or custom survey). Performance — business outcomes tied to engineering work (feature adoption, incident reduction, SLA compliance). Activity — git metrics: commits, PRs merged, reviews completed, deployments per developer (use Gitmore or similar tools). Communication — survey questions about collaboration quality, plus code review participation rates. Efficiency — cycle time, lead time, time in meetings vs. coding time, flow state frequency (survey). Combine survey data and system metrics into a quarterly SPACE report for each team.\n\n## Real-world example [...] ### ",
+        "score": 0.7844842,
+        "published_date": null,
+        "found_for": [
+          "Q1"
+        ],
+        "id": "S20"
+      },
+      {
+        "title": "Developer Productivity Intelligence Center",
+        "url": "https://larridin.com/developer-productivity-hub/intelligence-center",
+        "domain": "larridin.com",
+        "excerpt": "Jellyfish and DX measure developer productivity using frameworks (DORA, SPACE) built before AI wrote most of the code. Larridin’s Developer AI Impact Framework is built from first principles for AI-native engineering — with complexity-adjusted throughput instead of raw PR counts, code turnover instead of change failure rate alone, and AI attribution on every metric. The difference matters because AI inflates every traditional metric, making pre-AI frameworks produce misleading signals.\n\n## Stay Current\n\nThis intelligence center is updated as AI coding tools and workflows evolve. Benchmarks refresh as new production data becomes available. Frameworks adapt as the AI-native development paradigm matures.\n\nTalk to an Expert | Read the Blog\n\n## Further Reading\n\n### Explore More from Larridin",
+        "score": 0.77029204,
+        "published_date": null,
+        "found_for": [
+          "Q1"
+        ],
+        "id": "S21"
+      },
+      {
+        "title": "How to measure AI's impact on developer productivity",
+        "url": "https://getdx.com/blog/ai-measurement-hub",
+        "domain": "getdx.com",
+        "excerpt": "### Periodic surveys\n\nQuarterly surveys capture longer-term trends including developer satisfaction, perceived productivity improvements, code maintainability perceptions, and overall developer experience that system data can’t measure.\n\n### Experience sampling\n\nExperience sampling asks targeted questions at the point of work. After submitting a PR: “Did you use AI to write this code?” After reviewing: “Was this code easier or harder to understand because it was AI-generated?”\n\nBest practice: Layer all three methods to cross-validate data and build a comprehensive picture.\n\n## The reality versus the hype [...] Note: Agentic tooling is still in early stages. Focus on maturity (autocomplete vs. multi-step tasks) rather than just usage.\n\n## Common pitfalls to avoid\n\n### Focusing on vanity metrics\n\nOveremphasizing “percentage of code written by AI” without connecting to business outcomes leads to misleading conclusions. Focus on business impact metrics like time savings, developer satisfaction, and quality measures.\n\n### Why acceptance rate is flawed\n\nAccepted code is often heavily modified or deleted before commit. Better alternatives include tagging AI-assisted PRs or using file system-level observability to detect AI-generated changes across IDEs and tools.\n\n### Measuring before adoption maturity [...] ### Measuring before adoption maturity\n\nAllow 3-6 months for developers to develop effective AI workflows before drawing definitive conclusions. Early measurements should focus ",
+        "score": 0.71849567,
+        "published_date": null,
+        "found_for": [
+          "Q4"
+        ],
+        "id": "S22"
+      },
+      {
+        "title": "The Impact of LLM-Assistants on Software Developer Productivity: A Systematic Review and Mapping Study",
+        "url": "https://arxiv.org/html/2507.03156v2",
+        "domain": "arxiv.org",
+        "excerpt": "As established in RQ3 (Section 7), traditional approaches to defining and measuring productivity in software engineering remain limited, even when expanded through multidimensional frameworks such as SPACE. While these models clarify how productivity is operationalized, they do not fully capture the deeper transformations that arise when new technologies reshape everyday development practices. The integration of LLM-assistants extends beyond measurable performance gains, since it redefines development practices, decision-making, and team dynamics across the entire software life cycle Rajbhoj et al., 2024; Khojah et al., 2024; Smit et al., 2024. As discussed in Section 8, LLM-assistants bring clear productivity benefits, such as improved code quality and accelerated development, yet also [...] The diverse methodologies and wide variation in reported findings across primary studies (see Section 5 and Section 6) highlight the need for a structured lens to interpret how productivity is conceptualized in the literature, especially in the context of rapidly evolving development with LLM-assistants. However, existing approaches to measuring productivity often fall short of capturing this diversity. Traditional metrics such as Lines of Code (LOC) and Function Points, have long been criticized for offering only a narrow view of productivity centered on output quantity. Likewise, quantitative performance frameworks such as the DevOps Research and Assessment (DORA) model Google, 2022, t",
+        "score": 0.70222384,
+        "published_date": null,
+        "found_for": [
+          "Q4"
+        ],
+        "id": "S23"
+      },
+      {
+        "title": "7 Modern Tools for Measuring AI Developer Productivity",
+        "url": "https://jellyfish.co/library/tools-to-measure-ai-developer-productivity",
+        "domain": "jellyfish.co",
+        "excerpt": "### Traditional Metrics Cannot Isolate What AI Contributed\n\nThe old assumption → Repositories record what changed, who committed it, and when it was merged. That was enough for a long time, since every line came from a person and the source was never in question.\n\nWhat AI broke → AI brings a variable that leaves no trace in the data. Commits look the same whether a developer wrote them or accepted them from Copilot. A shorter cycle time in Q2 carries no evidence about which cause produced it, and the rollout usually hit every team at once, so there is no untouched group to compare against.\n\n### Faster Code Does Not Mean Faster Delivery",
+        "score": 0.7014064,
+        "published_date": null,
+        "found_for": [
+          "Q4"
+        ],
+        "id": "S24"
+      },
+      {
+        "title": "How tech companies measure the impact of AI on software development",
+        "url": "https://newsletter.pragmaticengineer.com/p/how-tech-companies-measure-the-impact-of-ai",
+        "domain": "newsletter.pragmaticengineer.com",
+        "excerpt": "Measuring the impact of AI tools on engineering teams is a similarly hard problem to measuring developer productivity. Accurately measuring developer productivity is tricky and the industry has struggled with it for well over a decade. We know that there is no one single metric that can tell us how productive an engineering team is because teams can simply optimize for any one metric while not actually being more productive. In 2023, consultancy giant McKinsey confidently declared that they’d “cracked” how to measure developer productivity. But the creator of the extreme programming methodology, Kent Beck, and I, were skeptical of this claim, and we published a counterpoint in the article Measuring developer productivity? A response to McKinsey. [...] Even now, some companies limit their measurements to AI code assistants within the IDE or terminal, and don’t always count a planning session with ChatGPT, or using AI to sift through thousands of Jira tickets, as part of “AI-related time savings.” In the area of self-reported measurements of AI impact (e.g., “how much time did you save this week thanks to AI tools?”), I expect the surface area of measurement to expand to keep up with different types of tools.\n\n## 6. How should you measure AI impact?\n\nWhat can you take away from all these metrics, and what should you implement in your own workplace? [...] Using this style of comparison, Webflow was able to pinpoint groups for whom using AI tools saves the most time; in this case",
+        "score": 0.7004852,
+        "published_date": null,
+        "found_for": [
+          "Q4"
+        ],
+        "id": "S25"
+      }
+    ],
+    "query_log": [
+      {
+        "id": "Q1",
+        "query": "developer productivity metrics AI coding tools SPACE framework",
+        "found": 5,
+        "error": null
+      },
+      {
+        "id": "Q2",
+        "query": "empirical study GitHub Copilot developer speed efficiency gains",
+        "found": 5,
+        "error": null
+      },
+      {
+        "id": "Q3",
+        "query": "AI coding assistants code quality security vulnerabilities tech debt",
+        "found": 5,
+        "error": null
+      },
+      {
+        "id": "Q4",
+        "query": "limitations methodology measuring developer productivity AI assistants",
+        "found": 5,
+        "error": null
+      },
+      {
+        "id": "Q5",
+        "query": "AI coding tools junior vs senior developer productivity impact",
+        "found": 5,
+        "error": null
+      }
+    ]
+  },
+  "extraction": {
+    "claims": [
+      {
+        "id": "C1",
+        "source_id": "S1",
+        "claim": "Documentation tasks finished twice as fast and code generation was 46% faster in McKinsey's internal study.",
+        "quote": "McKinsey's internal study confirmed this pattern: documentation tasks finished in half the time and code generation completed 46% faster, but gains shrank to less than 10% for complex, unfamiliar tasks.",
+        "evidence_type": "measured_data",
+        "stance": "supports"
+      },
+      {
+        "id": "C2",
+        "source_id": "S2",
+        "claim": "A study of 300 engineers found a 31.8% reduction in PR review cycle time and a 60.1% increase in code shipped.",
+        "quote": "31.8% reduction in PR review cycle time\n 60.1% overall increase in code shipped\n About 20 minutes saved per developer daily",
+        "evidence_type": "measured_data",
+        "stance": "supports"
+      },
+      {
+        "id": "C3",
+        "source_id": "S3",
+        "claim": "Developers using GitHub Copilot completed tasks 55% faster compared to those without it in a controlled experiment.",
+        "quote": "The striking difference was that developers who used GitHub Copilot completed the task significantly faster–55% faster than the developers who didn’t use GitHub Copilot.",
+        "evidence_type": "measured_data",
+        "stance": "supports"
+      },
+      {
+        "id": "C4",
+        "source_id": "S4",
+        "claim": "Fastly's survey indicates senior developers ship 2.5 times more AI-generated code than juniors.",
+        "quote": "Senior developers ship ~2.5× more AI-generated code than juniors (32% vs 13%)",
+        "evidence_type": "survey",
+        "stance": "supports"
+      },
+      {
+        "id": "C5",
+        "source_id": "S5",
+        "claim": "An analysis of changed lines of code found an 8-fold increase in duplicated code blocks during 2024.",
+        "quote": "GitClear's analysis of 211 million changed lines of code (2020–2024) revealed an 8-fold increase in duplicated code blocks during 2024, while copy-pasted code exceeded moved code, indicating declining refactoring practices.",
+        "evidence_type": "measured_data",
+        "stance": "challenges"
+      },
+      {
+        "id": "C6",
+        "source_id": "S6",
+        "claim": "Bain research shows 10-15% productivity gains from AI assistants, though only 1% of companies reach maturity.",
+        "quote": "Bain research shows 10-15% productivity gains from AI assistants. But here's the catch. Only 1% of companies reach maturity, even as enterprise adoption accelerates.",
+        "evidence_type": "measured_data",
+        "stance": "supports"
+      },
+      {
+        "id": "C7",
+        "source_id": "S7",
+        "claim": "Access to Copilot increased weekly completed tasks by 26% on average, with newer employees seeing the largest gains.",
+        "quote": "The researchers found that access to Copilot increased output — the number of completed weekly tasks — by 26% when the results across all three experiments were averaged.",
+        "evidence_type": "measured_data",
+        "stance": "supports"
+      },
+      {
+        "id": "C8",
+        "source_id": "S8",
+        "claim": "AI coding assistants may increase technical debt by encouraging the generation of new code rather than reusing existing functions.",
+        "quote": "Essentially, AI might cause developers to _write more, newer code_ rather than reusing existing functions, because it’s so easy to generate something from scratch on demand.",
+        "evidence_type": "expert_opinion",
+        "stance": "challenges"
+      },
+      {
+        "id": "C9",
+        "source_id": "S8",
+        "claim": "Seasoned engineers report that AI-generated code in production often requires significant review or rewriting due to performance or maintainability issues.",
+        "quote": "Seasoned engineers have reported experiences where AI-produced code in large-scale production had to be heavily reviewed and in some cases rewritten, either due to performance issues or maintainability.",
+        "evidence_type": "anecdote",
+        "stance": "challenges"
+      },
+      {
+        "id": "C10",
+        "source_id": "S9",
+        "claim": "AI coding tools act as technical debt accelerants by producing code faster than existing governance and review processes can manage.",
+        "quote": "AI-assisted coding tools aren’t technical debt creators, they’re technical debt accelerants.",
+        "evidence_type": "expert_opinion",
+        "stance": "challenges"
+      },
+      {
+        "id": "C11",
+        "source_id": "S10",
+        "claim": "In a 2022 experiment, developers using GitHub Copilot completed a JavaScript HTTP server task 55% faster than those without it.",
+        "quote": "The half with Copilot finished in 1 hour 11 minutes on average, 55% faster than the 2 hours 41 minutes it took the rest.",
+        "evidence_type": "measured_data",
+        "stance": "supports"
+      },
+      {
+        "id": "C12",
+        "source_id": "S10",
+        "claim": "A 2025 METR trial found developers using Cursor were 19% slower on 246 real issues.",
+        "quote": "19% slower on 246 real issues",
+        "evidence_type": "measured_data",
+        "stance": "challenges"
+      },
+      {
+        "id": "C13",
+        "source_id": "S11",
+        "claim": "Research with Accenture showed pull request time dropped from 9.6 days to 2.4 days, a 75% reduction in development cycle time.",
+        "quote": "Pull request time dropped from 9.6 days to 2.4 days, representing a 75% reduction in development cycle time.",
+        "evidence_type": "measured_data",
+        "stance": "supports"
+      },
+      {
+        "id": "C14",
+        "source_id": "S12",
+        "claim": "AI-assisted developers commit code at three to four times the rate of peers but introduce security findings at 10 times the rate.",
+        "quote": "AI-assisted developers committed code at three to four times the rate of their non-AI peers, and monthly security findings rose from approximately 1,000 to more than 10,000",
+        "evidence_type": "measured_data",
+        "stance": "mixed"
+      },
+      {
+        "id": "C15",
+        "source_id": "S13",
+        "claim": "Controlled task studies report larger productivity effects than field studies and workplace surveys.",
+        "quote": "In short, controlled task studies report larger productivity effects than field studies and workplace surveys",
+        "evidence_type": "measured_data",
+        "stance": "mixed"
+      },
+      {
+        "id": "C16",
+        "source_id": "S13",
+        "claim": "A large-scale study of workers in Denmark found that users of GenAI tools saved only 3% of their time on average.",
+        "quote": "On average, users in the latter study saved only 3% of their time.",
+        "evidence_type": "measured_data",
+        "stance": "mixed"
+      },
+      {
+        "id": "C17",
+        "source_id": "S14",
+        "claim": "AI-generated code has higher technical-debt and security-vulnerability density compared to human-written code.",
+        "quote": "has substantially higher technical-debt density (37%) and security-vulnerability density (41%) than do codes written by humans.",
+        "evidence_type": "measured_data",
+        "stance": "challenges"
+      },
+      {
+        "id": "C18",
+        "source_id": "S15",
+        "claim": "Using GitHub Copilot resulted in a 10.6% increase in pull requests.",
+        "quote": "Found a significant 10.6% increase in PRs with Copilot integration.",
+        "evidence_type": "measured_data",
+        "stance": "supports"
+      },
+      {
+        "id": "C19",
+        "source_id": "S15",
+        "claim": "GitHub Copilot reduced development cycle time by an average of 3.5 hours.",
+        "quote": "Demonstrated a 3.5 hours reduction in cycle time, enhancing development efficiency.",
+        "evidence_type": "measured_data",
+        "stance": "supports"
+      },
+      {
+        "id": "C20",
+        "source_id": "S17",
+        "claim": "Developer surveys regarding AI coding assistants show high satisfaction but only modest time savings.",
+        "quote": "our survey results revealed high satisfaction but only modest time savings, underscoring the limits of efficiency-focused measures.",
+        "evidence_type": "survey",
+        "stance": "mixed"
+      },
+      {
+        "id": "C21",
+        "source_id": "S18",
+        "claim": "AI-assisted coding can inflate activity metrics like code output and commits without necessarily improving delivery outcomes.",
+        "quote": "AI increases activity metrics such as code output and commits, but does not automatically improve delivery outcomes",
+        "evidence_type": "expert_opinion",
+        "stance": "mixed"
+      },
+      {
+        "id": "C22",
+        "source_id": "S21",
+        "claim": "AI tools inflate traditional productivity metrics, which can lead to misleading signals when using pre-AI frameworks.",
+        "quote": "AI inflates every traditional metric, making pre-AI frameworks produce misleading signals.",
+        "evidence_type": "expert_opinion",
+        "stance": "challenges"
+      },
+      {
+        "id": "C23",
+        "source_id": "S23",
+        "claim": "LLM-assistants bring clear productivity benefits, such as improved code quality and accelerated development.",
+        "quote": "LLM-assistants bring clear productivity benefits, such as improved code quality and accelerated development",
+        "evidence_type": "expert_opinion",
+        "stance": "supports"
+      },
+      {
+        "id": "C24",
+        "source_id": "S24",
+        "claim": "Traditional repositories cannot isolate AI contributions because commits look the same whether written by a person or accepted from Copilot.",
+        "quote": "Commits look the same whether a developer wrote them or accepted them from Copilot.",
+        "evidence_type": "expert_opinion",
+        "stance": "neutral"
+      }
+    ],
+    "stats": {
+      "proposed": 24,
+      "verified": 24,
+      "rejected": 0
+    },
+    "batch_errors": []
+  },
+  "analysis": {
+    "themes": [
+      {
+        "title": "Task Speed and Completion Time",
+        "summary": "Multiple studies and controlled experiments indicate that AI coding assistants enable developers to complete tasks, documentation, and specific coding challenges significantly faster.",
+        "claim_ids": [
+          "C1",
+          "C3",
+          "C7",
+          "C11",
+          "C13",
+          "C19"
+        ],
+        "relationship": "agreement",
+        "strength": {
+          "level": "Strong",
+          "reasons": [
+            "6 claims from 6 sources on 6 domains",
+            "6 based on measured data"
+          ],
+          "n_claims": 6,
+          "n_sources": 6,
+          "n_domains": 6,
+          "n_measured": 6
+        }
+      },
+      {
+        "title": "Code Output vs. Real-World Quality and Technical Debt",
+        "summary": "While AI tools increase code generation, pull request counts, and commit rates, various sources report downsides such as duplicated code, security vulnerabilities, and increased technical debt.",
+        "claim_ids": [
+          "C5",
+          "C8",
+          "C10",
+          "C14",
+          "C17",
+          "C21"
+        ],
+        "relationship": "mixed",
+        "strength": {
+          "level": "Strong",
+          "reasons": [
+            "6 claims from 6 sources on 6 domains",
+            "3 based on measured data"
+          ],
+          "n_claims": 6,
+          "n_sources": 6,
+          "n_domains": 6,
+          "n_measured": 3
+        }
+      },
+      {
+        "title": "Contrasting Field and Controlled Study Results",
+        "summary": "Controlled task studies report large productivity boosts like 55% faster completion, whereas broader field studies, workplace surveys, and specific trials find much more modest time savings or even slower performance.",
+        "claim_ids": [
+          "C12",
+          "C15",
+          "C16",
+          "C20"
+        ],
+        "relationship": "disagreement",
+        "strength": {
+          "level": "Strong",
+          "reasons": [
+            "4 claims from 3 sources on 3 domains",
+            "3 based on measured data"
+          ],
+          "n_claims": 4,
+          "n_sources": 3,
+          "n_domains": 3,
+          "n_measured": 3
+        }
+      },
+      {
+        "title": "Metric Inflation and Measurement Challenges",
+        "summary": "Experts note that AI coding tools inflate traditional productivity metrics like code output and commits without necessarily improving delivery outcomes, while traditional repositories struggle to isolate AI contributions.",
+        "claim_ids": [
+          "C21",
+          "C22",
+          "C24"
+        ],
+        "relationship": "agreement",
+        "strength": {
+          "level": "Moderate",
+          "reasons": [
+            "3 claims from 3 sources on 3 domains",
+            "0 based on measured data"
+          ],
+          "n_claims": 3,
+          "n_sources": 3,
+          "n_domains": 3,
+          "n_measured": 0
+        }
+      }
+    ],
+    "contradictions": [
+      {
+        "topic": "Task Completion Speed and Productivity Impact",
+        "side_a": {
+          "position": "Controlled experiments and company case studies show developers complete tasks and projects significantly faster using AI tools.",
+          "claim_ids": [
+            "C3",
+            "C11"
+          ]
+        },
+        "side_b": {
+          "position": "A real-world trial found that developers using an AI assistant were actually slower on a set of real issues.",
+          "claim_ids": [
+            "C12"
+          ]
+        },
+        "possible_explanation": "One possible reason is that controlled experiments test isolated, short-term tasks, whereas real-world issues involve complex legacy codebases and debugging that slow down AI-assisted workflows."
+      },
+      {
+        "topic": "Overall Time Savings in the Workplace",
+        "side_a": {
+          "position": "Internal studies and company data report massive speedups and cycle time reductions like 46% faster code generation and 75% shorter PR times.",
+          "claim_ids": [
+            "C1",
+            "C13"
+          ]
+        },
+        "side_b": {
+          "position": "Broad workplace studies and large-scale worker tracking show very modest time savings, averaging around 3%.",
+          "claim_ids": [
+            "C16"
+          ]
+        },
+        "possible_explanation": "One possible reason is that self-reported or isolated metrics focus on specific fast-typing tasks, whereas macro-level workplace evaluations account for time spent reviewing, refactoring, and debugging AI output."
+      }
+    ],
+    "gaps": [
+      "What is the long-term maintenance cost of AI-generated code over a software project's multi-year lifecycle?",
+      "How does developer experience level (junior vs. senior) systematically alter net productivity when accounting for code review overhead?",
+      "What specific organizational governance structures successfully prevent AI-driven technical debt accumulation?"
+    ],
+    "overall": {
+      "evidence_base": "Broad",
+      "claims": 24,
+      "sources_with_claims": 20,
+      "domains": 19,
+      "measured_data_claims": 15,
+      "theme_strength": {
+        "Strong": 3,
+        "Moderate": 1,
+        "Weak": 0
+      },
+      "contradictions_found": 2,
+      "sources_with_known_date": 0,
+      "sources_total": 25
+    },
+    "model": "gemini-3.5-flash-lite"
+  },
+  "report": {
+    "markdown": "# ATLAS Research Report\n\n**Question:** Does AI coding assistance actually make developers more productive?\n\n**Objective:** Evaluate empirical evidence, limitations, and expert insights to determine if AI coding assistance genuinely increases software developer productivity.\n\n*Generated on 2026-11-21. Evidence-first report: evidence sentences carry source citations, inference sentences are marked.*\n\n## Executive summary\n\nControlled experiments and company case studies indicate that AI coding assistants enable developers to complete tasks and projects significantly faster. [\\[S3\\]](https://github.blog/news-insights/research/research-quantifying-github-copilots-impact-on-developer-productivity-and-happiness) [\\[S10\\]](https://www.secondtalent.com/resources/github-copilot-statistics) Conversely, a real-world trial found that developers using an AI assistant were actually slower on a set of real issues. [\\[S10\\]](https://www.secondtalent.com/resources/github-copilot-statistics) Internal studies and company data report massive speedups and cycle time reductions, such as 46% faster code generation and 75% shorter PR times. [\\[S1\\]](https://tarobobaai.com/research/developer-productivity-paradox) [\\[S11\\]](https://www.quantumrun.com/consulting/github-copilot-statistics) However, broad workplace studies and large-scale worker tracking show very modest time savings, averaging around 3%. [\\[S13\\]](https://arxiv.org/html/2509.20353v2)\n\n## Research methodology\n\n1. **Planning:** the question was split into 5 sub-questions:\n   - Q1 (context): What metrics and frameworks are commonly used to define and measure developer productivity in AI tool evaluations?\n   - Q2 (evidence_for): What empirical data and case studies support the claim that AI coding assistants increase task completion speed?\n   - Q3 (evidence_against): What studies or data indicate that AI coding tools cause code quality degradation, security vulnerabilities, or increased code review burdens?\n   - Q4 (limitations): What are the key methodological limitations, biases, or gaps in existing research on AI developer productivity?\n   - Q5 (expert_views): How does the productivity impact of AI coding tools differ across developer experience levels, such as junior versus senior engineers?\n2. **Search:** 5 of 5 web searches succeeded, giving 25 unique sources (duplicates removed by URL).\n3. **Evidence extraction:** 24 claims were proposed from source excerpts. 24 were kept because their supporting quote was found verbatim in the excerpt; 0 were rejected.\n4. **Analysis:** claims were grouped into themes, compared for agreement and disagreement, and checked for gaps. Theme strength is computed by fixed rules, not by the AI.\n5. **Writing:** evidence sentences must cite claims. Sentences without valid citations, or with numbers not found in the cited claims, are downgraded to inference.\n\n## Key findings\n\n- Documentation tasks finished twice as fast and code generation was 46% faster in McKinsey's internal study. [\\[S1\\]](https://tarobobaai.com/research/developer-productivity-paradox)\n- Developers using GitHub Copilot completed tasks 55% faster compared to those without it in a controlled experiment. [\\[S3\\]](https://github.blog/news-insights/research/research-quantifying-github-copilots-impact-on-developer-productivity-and-happiness)\n- Access to Copilot increased weekly completed tasks by 26% on average, with newer employees seeing the largest gains. [\\[S7\\]](https://mitsloan.mit.edu/ideas-made-to-matter/how-generative-ai-affects-highly-skilled-workers)\n- An analysis of changed lines of code found an 8-fold increase in duplicated code blocks during 2024. [\\[S5\\]](https://www.linkedin.com/pulse/ai-generated-code-becoming-tomorrows-technical-5n8le)\n- AI-assisted developers commit code at three to four times the rate of peers but introduce security findings at 10 times the rate. [\\[S12\\]](https://labs.cloudsecurityalliance.org/research/csa-research-note-ai-generated-code-vulnerability-surge-2026)\n- A 2025 METR trial found developers using Cursor were 19% slower on 246 real issues. [\\[S10\\]](https://www.secondtalent.com/resources/github-copilot-statistics)\n\n## Evidence by theme\n\n### Task Speed and Completion Time\n*Relationship: agreement | Evidence strength: **Strong** (6 claims from 6 sources on 6 domains; 6 based on measured data)*\n\nMultiple studies and controlled experiments indicate that AI coding assistants enable developers to complete tasks, documentation, and specific coding challenges significantly faster. [\\[S1\\]](https://tarobobaai.com/research/developer-productivity-paradox) [\\[S3\\]](https://github.blog/news-insights/research/research-quantifying-github-copilots-impact-on-developer-productivity-and-happiness) [\\[S7\\]](https://mitsloan.mit.edu/ideas-made-to-matter/how-generative-ai-affects-highly-skilled-workers) [\\[S10\\]](https://www.secondtalent.com/resources/github-copilot-statistics) [\\[S11\\]](https://www.quantumrun.com/consulting/github-copilot-statistics) [\\[S15\\]](https://www.harness.io/blog/the-impact-of-github-copilot-on-developer-productivity-a-case-study)\n\n### Code Output vs. Real-World Quality and Technical Debt\n*Relationship: mixed | Evidence strength: **Strong** (6 claims from 6 sources on 6 domains; 3 based on measured data)*\n\nWhile AI tools increase code generation, pull request counts, and commit rates, various sources report downsides such as duplicated code, security vulnerabilities, and increased technical debt. [\\[S5\\]](https://www.linkedin.com/pulse/ai-generated-code-becoming-tomorrows-technical-5n8le) [\\[S8\\]](https://medium.com/@martin.jordanovski/ai-coding-assistants-software-quality-security-maintainability-50d9d1b62881) [\\[S9\\]](https://www.gartner.com/peer-community/post/how-addressing-technical-debt-risk-resulting-ai-coding-tools-have-established-specific-processes-to-manage-vulnerabilities) [\\[S12\\]](https://labs.cloudsecurityalliance.org/research/csa-research-note-ai-generated-code-vulnerability-surge-2026) [\\[S14\\]](https://cspub-ijcisim.org/index.php/ijcisim/article/view/5434) [\\[S18\\]](https://plandek.com/blog/complete-guide-to-the-space-framework)\n\n### Contrasting Field and Controlled Study Results\n*Relationship: disagreement | Evidence strength: **Strong** (4 claims from 3 sources on 3 domains; 3 based on measured data)*\n\nControlled task studies report large productivity boosts like 55% faster completion, whereas broader field studies, workplace surveys, and specific trials find much more modest time savings or even slower performance. [\\[S10\\]](https://www.secondtalent.com/resources/github-copilot-statistics) [\\[S13\\]](https://arxiv.org/html/2509.20353v2) [\\[S17\\]](https://dl.acm.org/doi/10.1145/3786583.3786848)\n\n### Metric Inflation and Measurement Challenges\n*Relationship: agreement | Evidence strength: **Moderate** (3 claims from 3 sources on 3 domains; 0 based on measured data)*\n\nExperts note that AI coding tools inflate traditional productivity metrics like code output and commits without necessarily improving delivery outcomes, while traditional repositories struggle to isolate AI contributions. [\\[S18\\]](https://plandek.com/blog/complete-guide-to-the-space-framework) [\\[S21\\]](https://larridin.com/developer-productivity-hub/intelligence-center) [\\[S24\\]](https://jellyfish.co/library/tools-to-measure-ai-developer-productivity)\n\n## Different perspectives\n\n- Controlled task studies report larger productivity effects than field studies and workplace surveys. [\\[S13\\]](https://arxiv.org/html/2509.20353v2)\n- Expert sources note that AI tools can inflate traditional productivity metrics like code output and commits without necessarily improving delivery outcomes. [\\[S18\\]](https://plandek.com/blog/complete-guide-to-the-space-framework)\n- This suggests that the metrics used to measure software development may not accurately capture the true impact of AI tools. *(inference)*\n\n## Contradictions and disagreements\n\n### Task Completion Speed and Productivity Impact\n- **Side A:** Controlled experiments and company case studies show developers complete tasks and projects significantly faster using AI tools. [\\[S3\\]](https://github.blog/news-insights/research/research-quantifying-github-copilots-impact-on-developer-productivity-and-happiness) [\\[S10\\]](https://www.secondtalent.com/resources/github-copilot-statistics)\n- **Side B:** A real-world trial found that developers using an AI assistant were actually slower on a set of real issues. [\\[S10\\]](https://www.secondtalent.com/resources/github-copilot-statistics)\n- **Possible explanation (inference):** One possible reason is that controlled experiments test isolated, short-term tasks, whereas real-world issues involve complex legacy codebases and debugging that slow down AI-assisted workflows.\n\n### Overall Time Savings in the Workplace\n- **Side A:** Internal studies and company data report massive speedups and cycle time reductions like 46% faster code generation and 75% shorter PR times. [\\[S1\\]](https://tarobobaai.com/research/developer-productivity-paradox) [\\[S11\\]](https://www.quantumrun.com/consulting/github-copilot-statistics)\n- **Side B:** Broad workplace studies and large-scale worker tracking show very modest time savings, averaging around 3%. [\\[S13\\]](https://arxiv.org/html/2509.20353v2)\n- **Possible explanation (inference):** One possible reason is that self-reported or isolated metrics focus on specific fast-typing tasks, whereas macro-level workplace evaluations account for time spent reviewing, refactoring, and debugging AI output.\n\n## Limitations and evidence assessment\n\n- **Evidence base:** Broad by ATLAS's simple rule: 24 verified claims from 20 sources on 19 domains; 15 claims are labelled measured data.\n- **Theme strength:** 3 strong, 1 moderate, 0 weak. This is a transparent rule-based score and is not a probability of being correct. For a theme about disagreement, a high score means the disagreement itself is well documented.\n- **Recency:** only 0 of 25 sources provided a publication date, so recency could not be assessed reliably.\n- **Excerpts, not full pages:** claims come from search-result excerpts, so context outside the excerpt is not seen.\n- **What verification means:** a verified quote proves the text exists in the excerpt. It does not prove the claim itself is true.\n- **Source type mix:** 0 vendor claims and 2 survey-based claims; these can reflect commercial interest or perception rather than measurement.\n- **Coverage:** results depend on the search queries and on what the search provider returned. Claim labels (type, stance) were assigned by an AI model and can contain errors.\n\n## Conclusion\n\nThe evidence supports the conclusion that AI assistants can accelerate specific tasks and increase code generation under controlled or specific conditions. [\\[S1\\]](https://tarobobaai.com/research/developer-productivity-paradox) [\\[S3\\]](https://github.blog/news-insights/research/research-quantifying-github-copilots-impact-on-developer-productivity-and-happiness) [\\[S10\\]](https://www.secondtalent.com/resources/github-copilot-statistics) At the same time, real-world trials, security findings, and questions around technical debt leave the broader net productivity benefits uncertain. [\\[S10\\]](https://www.secondtalent.com/resources/github-copilot-statistics) [\\[S12\\]](https://labs.cloudsecurityalliance.org/research/csa-research-note-ai-generated-code-vulnerability-surge-2026) [\\[S14\\]](https://cspub-ijcisim.org/index.php/ijcisim/article/view/5434)\n\n## Further research questions\n\n- What is the long-term maintenance cost of AI-generated code over a software project's multi-year lifecycle?\n- How does developer experience level (junior vs. senior) systematically alter net productivity when accounting for code review overhead?\n- What specific organizational governance structures successfully prevent AI-driven technical debt accumulation?\n- {'text': 'How do controlled laboratory task conditions differ from complex real-world software engineering environments?'}\n- {'text': 'What are the long-term maintenance costs associated with AI-generated code over several years?'}\n- {'text': 'Which metrics should engineering leaders use to accurately assess developer productivity when utilizing AI tools?'}\n\n## Sources\n\n- **S1** [The AI Productivity Paradox | Taroboba AI](https://tarobobaai.com/research/developer-productivity-paradox) (tarobobaai.com, date not provided)\n- **S2** [AI coding gains by developer seniority | hackers&wizards](https://www.hackersandwizards.dev/blog/2025/ai-productivity-by-seniority) (hackersandwizards.dev, date not provided)\n- **S3** [Research: quantifying GitHub Copilot’s impact on developer productivity and happiness - The GitHub Blog](https://github.blog/news-insights/research/research-quantifying-github-copilots-impact-on-developer-productivity-and-happiness) (github.blog, date not provided)\n- **S4** [Vibe Shift in AI Coding: Senior Developers Ship 2.5x More Than Juniors | Fastly](https://www.fastly.com/blog/senior-developers-ship-more-ai-code) (fastly.com, date not provided)\n- **S5** [Is AI-Generated Code Becoming Tomorrow's Technical Debt Because Developers Are Prioritizing Speed Over Architectural Quality?](https://www.linkedin.com/pulse/ai-generated-code-becoming-tomorrows-technical-5n8le) (linkedin.com, date not provided)\n- **S6** [AI Adoption Strategy: Senior vs Junior Developer Implementation | Augment Code](https://www.augmentcode.com/guides/ai-adoption-strategy-senior-vs-junior-developer-implementation) (augmentcode.com, date not provided)\n- **S7** [How generative AI affects highly skilled workers | MIT Sloan](https://mitsloan.mit.edu/ideas-made-to-matter/how-generative-ai-affects-highly-skilled-workers) (mitsloan.mit.edu, date not provided)\n- **S8** [AI Coding Assistants: Software Quality, Security & Maintainability](https://medium.com/@martin.jordanovski/ai-coding-assistants-software-quality-security-maintainability-50d9d1b62881) (medium.com, date not provided)\n- **S9** [How are you addressing technical debt risk resulting from AI coding tools? Have you established specific processes to manage vulnerabilities in AI-generated code, and are you collaborating with software engineering or other teams using these tools? | Gartner Peer Community](https://www.gartner.com/peer-community/post/how-addressing-technical-debt-risk-resulting-ai-coding-tools-have-established-specific-processes-to-manage-vulnerabilities) (gartner.com, date not provided)\n- **S10** [GitHub Copilot Statistics 2026: Users, Pricing, Productivity and Security - Second Talent](https://www.secondtalent.com/resources/github-copilot-statistics) (secondtalent.com, date not provided)\n- **S11** [GitHub Copilot Statistics 2026](https://www.quantumrun.com/consulting/github-copilot-statistics) (quantumrun.com, date not provided)\n- **S12** [Vibe Coding’s Security Debt: The AI-Generated CVE Surge – Lab Space](https://labs.cloudsecurityalliance.org/research/csa-research-note-ai-generated-code-vulnerability-surge-2026) (labs.cloudsecurityalliance.org, date not provided)\n- **S13** [Developer Productivity With and Without GitHub Copilot: A Longitudinal Mixed-Methods Case Study](https://arxiv.org/html/2509.20353v2) (arxiv.org, date not provided)\n- **S14** [Generative AI and Technical Debt in Software Development: Productivity Gains versus Code Quality and Security Risk | International Journal of Computer Information Systems and Industrial Management Applications](https://cspub-ijcisim.org/index.php/ijcisim/article/view/5434) (cspub-ijcisim.org, date not provided)\n- **S15** [GitHub Copilot Developer Productivity: 10.6% More PRs](https://www.harness.io/blog/the-impact-of-github-copilot-on-developer-productivity-a-case-study) (harness.io, date not provided)\n- **S17** [Beyond the Commit: Developer Perspectives on Productivity with AI Coding Assistants | Proceedings of the IEEE/ACM 48th International Conference on Software Engineering: Software Engineering in Practice](https://dl.acm.org/doi/10.1145/3786583.3786848) (dl.acm.org, date not provided)\n- **S18** [The Complete Guide to the SPACE Framework](https://plandek.com/blog/complete-guide-to-the-space-framework) (plandek.com, date not provided)\n- **S21** [Developer Productivity Intelligence Center](https://larridin.com/developer-productivity-hub/intelligence-center) (larridin.com, date not provided)\n- **S23** [The Impact of LLM-Assistants on Software Developer Productivity: A Systematic Review and Mapping Study](https://arxiv.org/html/2507.03156v2) (arxiv.org, date not provided)\n- **S24** [7 Modern Tools for Measuring AI Developer Productivity](https://jellyfish.co/library/tools-to-measure-ai-developer-productivity) (jellyfish.co, date not provided)\n",
+    "stats": {
+      "total": 15,
+      "evidence": 14,
+      "inference": 1,
+      "demoted_no_citation": 0,
+      "demoted_number_mismatch": 0
+    },
+    "report_model": "gemini-3.5-flash-lite"
+  },
+  "elapsed": 245
+}
