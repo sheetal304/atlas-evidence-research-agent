@@ -206,11 +206,3 @@ Example question: \*Does AI coding assistance actually make developers more prod
 
 \- PDF export
 
-
-
-\## License
-
-
-
-Add a license of your choice before publishing.
-
